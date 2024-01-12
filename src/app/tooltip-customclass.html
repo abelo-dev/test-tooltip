@@ -1,0 +1,61 @@
+<p>You can optionally pass in a custom class via <code>tooltipClass</code></p>
+
+<button type="button" 
+class="btn btn-outline-secondary" 
+triggers="click"
+[autoClose]="'inside'"
+[ngbTooltip]="tooltipContent" tooltipClass="my-custom-class">
+	Tooltip with custom class
+</button>
+
+    <ng-template #tooltipContent>
+      <table>
+          <tr>
+            <td style="text-align: left">VM</td>
+            <td style="text-align: right">vmValue</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">Debicode</td>
+            <td style="text-align: right">debicodeValue</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">Abfahrt</td>
+            <td style="text-align: right">AbfahrtValue</td>
+          </tr>
+      </table>
+			<br>
+			<table>
+				<tr>
+					<td>&nbsp;</td>
+					<td>Total</td>
+					<td>1.KL</td>
+					<td>2. Kl</td>
+				</tr>
+				<tr>
+					<td style="text-align: left">Auslastung</td>
+					<td style="text-align: right">TotalValue</td>
+					<td style="text-align: right">1KlValue</td>
+					<td style="text-align: right">2KlValue</td>
+				</tr>
+				<tr>
+					<td style="text-align: left">Reisende</td>
+					<td style="text-align: right">TotalValue</td>
+					<td style="text-align: right">1KlValue</td>
+					<td style="text-align: right">2KlValue</td>
+				</tr>
+				<tr>
+					<td style="text-align: left">Angebot</td>
+					<td style="text-align: right">TotalValue</td>
+					<td style="text-align: right">1KlValue</td>
+					<td style="text-align: right">2KlValue</td>
+				</tr>
+				<tr>
+					<td style="text-align: left">Stehplätze</td>
+					<td style="text-align: right">TotalValue</td>
+					<td style="text-align: right">1KlValue</td>
+					<td style="text-align: right">2KlValue</td>
+				</tr>
+			</table>
+
+
+    </ng-template>
